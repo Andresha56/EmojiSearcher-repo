@@ -1,14 +1,17 @@
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import Emoji from './Components/Emoji';
-import { Flex ,Container} from '@chakra-ui/react';
+import { Flex, Container } from '@chakra-ui/react';
+
 
 function App() {
+  
   return (
-    <Container  maxW='container.sm'>
+    <Container maxWidth="7xl">
       <Flex justify="flex-end">
-      <ColorModeSwitcher />
+        <ColorModeSwitcher />
       </Flex>
-      <Flex>
+      <Flex flexDirection="column" justifyContent="center" alignItems="center">
+        
         <Emoji />
       </Flex>
     </Container>
